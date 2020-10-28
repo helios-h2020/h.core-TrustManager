@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="lib/neurobehaviouralclassifier-master/neurobehaviour/src/androidTest/java"/>
+	<classpathentry kind="src" path="lib/neurobehaviouralclassifier-master/neurobehaviour/src/main/java"/>
+	<classpathentry kind="src" path="lib/neurobehaviouralclassifier-master/neurobehaviour/src/test/java"/>
+	<classpathentry excluding="eu/h2020/helios_social/modules/neurobehaviour/src/androidTest/java/|eu/h2020/helios_social/modules/neurobehaviour/src/test/java/|eu/h2020/helios_social/modules/neurobehaviour/src/main/java/|eu/h2020/helios_social/core/trustmanager/" kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/java/eu/h2020/helios_social/core/trustmanager"/>
+	<classpathentry kind="src" path="src/main/java/eu/h2020/helios_social/modules/neurobehaviour/src/androidTest/java"/>
+	<classpathentry kind="src" path="src/main/java/eu/h2020/helios_social/modules/neurobehaviour/src/main/java"/>
+	<classpathentry kind="src" path="src/main/java/eu/h2020/helios_social/modules/neurobehaviour/src/test/java"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="lib/neurobehaviouralclassifier-master/neurobehaviour/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
