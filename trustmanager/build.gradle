@@ -9,6 +9,14 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
+    maven {
+        url "https://builder.helios-social.eu/repository/helios-repository/"
+        credentials {
+            username = heliosUser
+            password = heliosPassword
+        }
+    }
+
 }
 
 dependencies {
@@ -19,6 +27,6 @@ configurations {
     compile.exclude group: "junit", module: "junit"
 }
 dependencies {
-    implementation 'com.github.DistributedSystemsSocialNetworkAnalysis:Contextual-Ego-Network:0.8-SNAPSHOT'
-    implementation project(":neurobehaviour")
+    implementation 'com.github.helios-h2020:h.core-SocialEgoNetwork:1.0.3'
+    implementation 'eu.h2020.helios_social.modules.neurobehaviour:neurobehaviour:1.0.16'
 }

@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TrustModule.iml" filepath="$PROJECT_DIR$/TrustModule.iml" group="TrustModule" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrustModule_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TrustModule_main.iml" group="TrustModule" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrustModule_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TrustModule_test.iml" group="TrustModule" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrustManager.iml" filepath="$PROJECT_DIR$/.idea/modules/TrustManager.iml" group="TrustManager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TrustManager-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TrustManager-app.iml" group="TrustManager/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/context/TrustManager-context.iml" filepath="$PROJECT_DIR$/.idea/modules/context/TrustManager-context.iml" group="TrustManager/context" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/messaging/TrustManager-messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/messaging/TrustManager-messaging.iml" group="TrustManager/messaging" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/profile/TrustManager-profile.iml" filepath="$PROJECT_DIR$/.idea/modules/profile/TrustManager-profile.iml" group="TrustManager/profile" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/security/TrustManager-security.iml" filepath="$PROJECT_DIR$/.idea/modules/security/TrustManager-security.iml" group="TrustManager/security" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrustManager_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TrustManager_main.iml" group="TrustManager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrustManager_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TrustManager_test.iml" group="TrustManager" />
       <module fileurl="file://$PROJECT_DIR$/lib/neurobehaviouralclassifier-master/neurobehaviour/src/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/lib/neurobehaviouralclassifier-master/neurobehaviour/src/androidTest/androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TrustModule/app" />
       <module fileurl="file://$PROJECT_DIR$/context/context.iml" filepath="$PROJECT_DIR$/context/context.iml" group="TrustModule/context" />
       <module fileurl="file://$PROJECT_DIR$/lib/neurobehaviouralclassifier-master/neurobehaviour/src/main/main.iml" filepath="$PROJECT_DIR$/lib/neurobehaviouralclassifier-master/neurobehaviour/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/messaging/messaging.iml" filepath="$PROJECT_DIR$/messaging/messaging.iml" group="TrustModule/messaging" />
-      <module fileurl="file://$PROJECT_DIR$/neurobehaviour/neurobehaviour.iml" filepath="$PROJECT_DIR$/neurobehaviour/neurobehaviour.iml" group="TrustModule/neurobehaviour" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neurobehaviour/neurobehaviour.iml" filepath="$PROJECT_DIR$/.idea/modules/neurobehaviour/neurobehaviour.iml" group="TrustManager/neurobehaviour" />
       <module fileurl="file://$PROJECT_DIR$/profile/profile.iml" filepath="$PROJECT_DIR$/profile/profile.iml" group="TrustModule/profile" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" group="TrustModule/security" />
-      <module fileurl="file://$PROJECT_DIR$/storage/storage.iml" filepath="$PROJECT_DIR$/storage/storage.iml" group="TrustModule/storage" />
+      <module fileurl="file://$PROJECT_DIR$/storage/storage.iml" filepath="$PROJECT_DIR$/storage/storage.iml" group="TrustManager/storage" />
       <module fileurl="file://$PROJECT_DIR$/lib/neurobehaviouralclassifier-master/neurobehaviour/src/test/test.iml" filepath="$PROJECT_DIR$/lib/neurobehaviouralclassifier-master/neurobehaviour/src/test/test.iml" />
     </modules>
   </component>

@@ -1,2 +1,2 @@
 include ':app', ':storage', ':messaging', ':profile', ':security', ':context', ':neurobehaviour'
-rootProject.name = 'TrustModule'
+rootProject.name = 'TrustManager'
