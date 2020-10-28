@@ -127,6 +127,8 @@ public class ContextTrustUpdater extends Thread {
         }
 
         while(!terminate) {
+            try { Thread.sleep(TrustManager.deltaT); }
+            catch (InterruptedException e) { e.printStackTrace(); }
             contextLock.lock();
             if(!active) {
                 try { contextCondVar.await(); }
@@ -134,8 +136,6 @@ public class ContextTrustUpdater extends Thread {
             }
             updateTrust();
             contextLock.unlock();
-            try { Thread.sleep(TrustManager.deltaT); }
-            catch (InterruptedException e) { e.printStackTrace(); }
         }
     }
 
