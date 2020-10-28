@@ -7,7 +7,7 @@ The Trust Manager is a multithreaded module that periodically computes a new tru
 Other HELIOS modules can then utilize the calculated trust value directly from the CEN and based on the user’s policy make decisions, e.g., what part of the profile can be shared, how urgent the message from an alter is to the ego, and so on.
 
 <h2>About the module</h2>
-<img src="trustmanager/docs/trust_module.png" width="70%">
+<img src="docs/trust_module.png" width="70%">
 
 The Trust Manager depends on the following HELIOS modules:
 <ul>
