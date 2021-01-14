@@ -1,2 +1,0 @@
-include ':app', ':storage', ':messaging', ':profile', ':security', ':context', ':neurobehaviour'
-rootProject.name = 'TrustManager'
