@@ -1,0 +1,3 @@
+include ':trustmanager'
+include ':app'
+rootProject.name = "TrustManager"
