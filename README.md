@@ -70,7 +70,7 @@ For more info review: `https://scm.atosresearch.eu/ari/helios_group/generic-issu
 
 
 <h2>How to use the module</h2>
-To start the Trust Manager, it is necessary to instantiate a `TrustManager` object, by calling the constructor method, and then call the `startModule` method. The manager will automatically instantiate all the threads related to the active contexts.
+To start the Trust Manager, it is necessary to instantiate a `TrustManager` object, by calling the constructor method, and then call the `startModule()` method. The manager will automatically instantiate all the threads related to the active contexts.
 
 The following methods are invoked automatically by the Trust Manager whenever precise events take place in the Contextual Ego Network. Such methods are invoked automatically by some callbacks that are registered on the Contextual Ego Network.
 
