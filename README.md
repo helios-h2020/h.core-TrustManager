@@ -1,12 +1,18 @@
 # Trust Manager module #
 
-The Trust Manager is a multithreaded module that periodically computes a new trust value for each node in each active context, and then updates the Contextual Ego Network with the newly computed trust value by storing it onto the corresponding edge.
+Repository for the Trust Manager Module (T4.5).
 
- Each running thread of the Trust Manager corresponds to an active context; whenever a context becomes inactive, the respective thread is put to a wait state through a condition variable. 
+## Short intro to the module ##
 
-Other HELIOS modules can then utilize the calculated trust value directly from the CEN and based on the user’s policy make decisions, e.g., what part of the profile can be shared, how urgent the message from an alter is to the ego, and so on.
+Trust is a very important aspect of Social Media platforms nowadays, and will become a crucial in the near future. Indeed humans often base their relationships based on how much they trust other people. Indeed, meaningful relationships are characterized by a certain level of trust between the two parties. An individual that has a trustful relationship with another one will be likely to have a positive and frequent communication. Moreover, one will be probably willing to share some social information and content that is made unavailable to others (the relationship with whom lacks of trustfulness).
+
+In this module we implement a privacy-preserving trust evaluation model, which is based on the most relevant features used for trust computation, such as interaction between users, and computes the trust values between the ego and each of its alters. The computation is supported by the Contextual Ego Network, which provides the friendship relationships and the contexts of the ego. Other HELIOS modules can utilize the calculated trust value thanks to the Trust module extremely intuitive APIs, and make decisions, e.g., what part of the profile can be shared, how urgent the message from an alter is to the ego, and so on.
 
 ## About the module ##
+
+The Trust Manager is a multithreaded module that periodically computes a new trust value for each node in each active context, and then updates the Contextual Ego Network with the newly computed trust value by storing it onto the corresponding edge.
+
+Each running thread of the Trust Manager corresponds to an active context; whenever a context becomes inactive, the respective thread is put to a wait state through a condition variable. 
 
 ![HELIOS Trust Module API](https://raw.githubusercontent.com/helios-h2020/h.core-TrustManager/master/docs/trust_module.png "Trust Module")
 
@@ -69,7 +75,11 @@ For more info review: `https://scm.atosresearch.eu/ari/helios_group/generic-issu
 
 
 ## How to use the module ##
+
 To start the Trust Manager, it is necessary to instantiate a `TrustManager` object, by calling the constructor method, and then call the `startModule()` method. The manager will automatically instantiate all the threads related to the active contexts.
+To get the trust value computed between the user and one of its alters, the method `getTrust` must be called on the `TrustManager` object. The arguments required by the function should be retrieved from the same Contextual Ego Network instance passed to the constructor of the `TrustManager` object.
+
+## Inside the Trust module ##
 
 The following methods are invoked automatically by the Trust Manager whenever precise events take place in the Contextual Ego Network. Such methods are invoked automatically by some callbacks that are registered on the Contextual Ego Network.
 
@@ -77,8 +87,6 @@ The following methods are invoked automatically by the Trust Manager whenever pr
 - Whenever a new alter is added to a context in the Contextual Ego Network, the *addAlterToContext()* method is triggered: the thread related to that context is notified and gives an initial trust score to the new alter. From that moment on, up until such context is deactivated, trust values for the new alter in that specific context are computed every deltaT seconds.
 - Whenever a context’s status is switched to active, the *activateContext()* method is triggered: the Trust Manager notifies the thread related to that context, that from that moment on (up until such context is deactivated again) starts computing trust values for all the nodes in it every deltaT seconds.
 - Whenever a context’s status is switched to inactive, the *deactivateContext()* method is triggered: the Trust Manager notifies the thread related to that context, that computes a last set of trust scores for all the nodes in it and is then put on hold on a condition variable (up until such context is activated again).
-
-To get the trust value computed between the user and one of its alters, the method `getTrust` must be called on the `TrustManager` object. The arguments required by the function should be retrieved from the same Contextual Ego Network instance passed to the constructor of the `TrustManager` object.
 
 ## Project Structure ##
 This project is structured as follows:
