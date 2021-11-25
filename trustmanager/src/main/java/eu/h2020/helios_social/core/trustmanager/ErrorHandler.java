@@ -10,6 +10,7 @@ import java.util.logging.Logger;
  * @author Laura Ricci (ricci@di.unipi.it)
  * @author Andrea Michienzi (andrea.michienzi@di.unipi.it)
  * @author Giulia Fois (g.fois5@studenti.unipi.it)
+ * @author Fabrizio Baiardi (f.baiardi@unipi.it)
  */
 public class ErrorHandler {
 

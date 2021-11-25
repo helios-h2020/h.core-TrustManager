@@ -66,7 +66,7 @@ To request Nexus username and password, contact with: `jordi.hernandezv@atos.net
 ### How to use the dependencies ###
 
 To use the dependency in `build.gradle` of the "father" project, you should specify the last version available in Nexus, related to the last Jenkins's deploy.
-For example, to declare the dependency on the videocall module and the respective version:
+For example, to declare the dependency on the Trust Manager module and the respective version:
 
 `implementation 'eu.h2020.helios_social.core.trustmanager:trustmanager:1.0.19'`
 
@@ -90,5 +90,5 @@ The following methods are invoked automatically by the Trust Manager whenever pr
 
 ## Project Structure ##
 This project is structured as follows:
-- The **src** directory contains the source code files.
-- The **docs** directory contains the documentation for the source code.
+- The **trustmanager** directory contains the source code files of the Trust Manager Module.
+- The **docs** directory contains the Javadoc for the source code.
